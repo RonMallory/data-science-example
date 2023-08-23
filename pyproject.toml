@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "data-science-example"
+version = "0.1.0"
+description = "Project to demonstrate setting up a repo for use with data science projects."
+authors = ["Ron Mallory <ronnymallory@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+flake8 = "^6.1.0"
+mypy = "^1.5.1"
+pre-commit = "^3.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
