@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "data-science-example"
+name = "nist-termonology-dataset"
 version = "0.1.0"
 description = "Project to demonstrate setting up a repo for use with data science projects."
 authors = ["Ron Mallory <ronnymallory@gmail.com>"]
@@ -9,6 +9,9 @@ packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+requests = "^2.31.0"
+pandas = "^2.0.3"
+types-requests = "^2.31.0.2"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.7.0"
